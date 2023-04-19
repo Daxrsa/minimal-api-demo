@@ -1,0 +1,13 @@
+1.Explicit http client -> Register HTTPClient object 
+                          explicitly in Dependency Injection Service: 
+                          Not recommended because you cannot register 
+                          more than one domain. 
+2.Named Client -> Registering named clients 
+                  with the 'IHttpClientFactory' service, 
+                  which can then be injected into 
+                  the minimal API endpoints or services.
+3.Type Client ->  involves creating a typed class that represents 
+                  the HTTP client and registering it as a named 
+                  client with the HttpClient service.
+4.HttpRequestMessage Object -> (Not recommended, there are better ways to implement this) 
+                               technique that involves using HttpRequestMessage class.
